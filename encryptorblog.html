@@ -12,24 +12,65 @@
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="index.html" class="waves-effect waves-light purple-text text-accent-1">Home</a></li>
         <li><a href="devblog.html" class="waves-effect waves-light cyan-text text-accent-2">Dev Blog</a></li>
-        <li><a href="" class="waves-effect waves-light purple-text text-accent-1">CV</a></li>
+        <li><a href="res/CV.pdf" class="waves-effect waves-light purple-text text-accent-1">CV</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="https://twitter.com/kashdadhich" target="_blank" class="waves-effect waves-light cyan-text text-accent-2"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://github.com/AakashDadhich" target="_blank" class="waves-effect waves-light cyan-text text-accent-2"><i class="fab fa-github-square"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/aakash-dadhich-5a3706131/" target="_blank" class="waves-effect waves-light cyan-text text-accent-2"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="http://www.finestinlondon.com" target="_blank" class="waves-effect waves-light cyan-text text-accent-2"><i class="fas fa-camera"></i></a></li>
+        <li><a href="https://twitter.com/kashdadhich" target="_blank" class="waves-effect waves-light purple-text text-accent-1"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://github.com/AakashDadhich" target="_blank" class="waves-effect waves-light purple-text text-accent-1"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/aakash-dadhich-5a3706131/" target="_blank" class="waves-effect waves-light purple-text text-accent-1"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="http://www.finestinlondon.com" target="_blank" class="waves-effect waves-light purple-text text-accent-1 "><i class="fas fa-camera"></i></a></li>
                 <!-- purple-text text-accent-1 -->
       </ul>
     </div>
   </nav>
   </header>
-  <main>
-  
+  <main class="center-align">
+    <div class="container cyan-text text-accent-2">
+      <h1>
+        Encryption Simulator
+      </h1>
+      <br>
+      <h6 class="right purple-text text-accent-1">Why did I choose this project?</h6><br>
+      <p>
+        This was created for my final year Computing A-Level project. I pretty much had full creative control over the project so, with my
+        interest in cybersecurity, I decided to learn about cryptography and create a simulator to emulate different types of encryption
+        methods and ciphers.
+        <br><br>
+        Since learning to program, I've always been interested in cybersecurity but I've never really known how to start learning about it.
+        This A-level project gave me the freedom to finally start to educate myself on a specific topic related to security, and encryption
+        seemed like a fun place to start. Admittedly, it wasn't the most visually stunning project I've made, but I was using Visual Basic after all.
+        </p>
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="images/encryptor.png"></a>
+          <a class="carousel-item" href="#two!"><img src="images/es1.png"></a>
+          <a class="carousel-item" href="#three!"><img src="images/es2.png"></a>
+          <a class="carousel-item" href="#four!"><img src="images/es3.png"></a>
+          <a class="carousel-item" href="#five!"><img src="images/es4.png"></a>
+        </div>
+      <h6 class="right purple-text text-accent-1">Functionality</h6><br>
+      <p>
+        The simulator comprises of a simulator of 3 different types of ciphers (polyalphabetic, Caesar and RSA) and an instructions page explaining
+        how to use each cipher. The gallery above shows what each page looks like. Each simulator page lets you enter some plaintext and a key to be encrypted.
+        They also have a 'decrypt a message' button, which will switch the ciphertext and plaintext boxes around and allow for some decryption key input.
+      </p>
+      <br>
+      <h6 class="right purple-text text-accent-1">What did I learn from this project?</h6><br>
+      <p>
+        While the implementation of the polyalphabetic and Caesar ciphers were quite straightforward as their ciphertext is just reversed using the same key,
+         RSA wasn't so trivial. The RSA encryption method is asymmetrical, meaning the encryption key and decryption key are different. Replicating this in code
+         proved challenging because RSA is meant to be difficult to crack, so the decryption method deals with huge numbers. It actually ended up causing a
+         large bug where I discovered the modulus function in VB actually calculates normal division and truncates the result instead of standard integer division.
+         <br><br>
+         Learning about this concept that's commonly used in 2 factor authentication (like in online banking transactions) was really interesting, and definitely
+         perked my interest in learning more about cybersecurity. I have since started reading <i>Hacking: The Art of Exploitation</i>, as well as following
+         a variety of security related blogs and podcasts.
+         <br><br>
+      </p>
+    </div>
   </main>
 
 <!-- Scripts -->
 <script>
-
+  M.AutoInit();
 </script>
 </body>
